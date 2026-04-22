@@ -1,8 +1,8 @@
 /*
-Autor: Equipo docente (base para estudiantes)
+Autor: Pablohzdev - Pablo Hernandez Lopez 23211987
 Curso: Arquitectura de Computadoras / Ensamblador ARM64
 Práctica: Mini Cloud Log Analyzer (Bash + ARM64 + GNU Make)
-Fecha: 20 de abril de 2026
+Fecha: 22 de abril de 2026
 Descripción: Lee códigos HTTP desde stdin (uno por línea), clasifica 2xx/4xx/5xx
              y muestra un reporte en español usando únicamente syscalls Linux.
 */
@@ -50,7 +50,7 @@ _start:
     // Contadores principales
     mov x19, #0                  // exitos_2xx
     mov x20, #0                  // errores_4xx
-    mov x21, #0                  // errores_5xx
+     mov x21, #0                  // errores_5xx
 
     // Estado del parser
     mov x22, #0                  // numero_actual
@@ -172,7 +172,7 @@ salida_error:
 clasificar_codigo:
     cmp x0, #200
     b.lt clasificar_fin
-    cmp x0, #299
+    cmp x0, #300
     b.gt revisar_4xx
     add x19, x19, #1
     b clasificar_fin
@@ -180,7 +180,7 @@ clasificar_codigo:
 revisar_4xx:
     cmp x0, #400
     b.lt clasificar_fin
-    cmp x0, #499
+    cmp x0, #500
     b.gt revisar_5xx
     add x20, x20, #1
     b clasificar_fin
