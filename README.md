@@ -14,6 +14,13 @@ Este proyecto consiste en la implementación de un **analizador de logs simplifi
 El programa procesa códigos de estado HTTP recibidos a través de la entrada estándar (`stdin`) y los clasifica según su tipo.
 
 ---
+## 🎥 Asciicinema
+
+[Testing](https://asciinema.org/a/UTfG1eXhGSMzoBuB)
+
+[Testing with 1000 numbers](https://asciinema.org/a/qaWfQpcgzaxUMcYE)
+
+
 
 ## 🎯 Variante implementada
 
