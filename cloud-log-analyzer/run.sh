@@ -1,6 +1,29 @@
 #!/usr/bin/env bash
-# Script de ejecución rápida para la variante base.
-# Lee el archivo de ejemplo A y lo envía a stdin del analizador.
+# =============================================================================
+# Autor: Pablohzdev: Hernández López Pablo - 23211987
+# Curso: Arquitectura de Computadoras / Ensamblador ARM64
+# Práctica: Mini Cloud Log Analyzer (Variante A)
+# Fecha: Abril 2026
+#
+# Descripción:
+# Script de ejecución automatizada para el programa "analyzer".
+# Este script compila el proyecto (si es necesario) y ejecuta el analizador
+# de logs utilizando como entrada el archivo de prueba logs_A.txt.
+#
+# Funcionamiento:
+# - Verifica si el binario ./analyzer existe y es ejecutable
+# - Si no existe, ejecuta 'make' para compilar el proyecto
+# - Detecta la arquitectura del sistema:
+#     * ARM64 (aarch64): ejecución nativa
+#     * x86_64: ejecución mediante emulación con qemu-aarch64
+# - Envía el archivo de logs como entrada estándar al programa
+#
+# Notas:
+# - Este script forma parte de una práctica académica enfocada en el uso de
+#   syscalls en ARM64 sin libc.
+# - Facilita la validación rápida del funcionamiento del programa. 
+# =============================================================================
+
 
 set -euo pipefail
 
