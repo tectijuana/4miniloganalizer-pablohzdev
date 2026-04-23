@@ -1,6 +1,11 @@
-# Makefile de la práctica Mini Cloud Log Analyzer
-# Comentarios en español para facilitar la comprensión a estudiantes principiantes.
-
+###############################################################################
+# Proyecto: Mini Cloud Log Analyzer
+# Autor: pablovm1
+# Fecha: Abril 2026
+# Descripción: Makefile para ensamble de lógica de análisis de logs en ARM64.
+# Soporta compilación nativa y cruzada (cross-compilation) para facilitar
+# el desarrollo en entornos diversos.
+###############################################################################
 PROJECT := analyzer
 SRC := src/analyzer.s
 
