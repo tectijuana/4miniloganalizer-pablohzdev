@@ -1,5 +1,18 @@
 #!/usr/bin/env bash
-# Pruebas automáticas para la variante base (conteo 2xx/4xx/5xx).
+###############################################################################
+# Proyecto:     Mini Cloud Log Analyzer
+# Archivo:      test.sh
+# Descripción:  Script de pruebas automatizadas para validación de lógica ARM64.
+# Autor:        pablohzdev - Hernández López Pablo 23211987
+# Fecha:        Abril 2026
+#
+# Uso:          ./test.sh
+#               (Se integra con 'make test' en el Makefile principal)
+#
+# Requisitos:   - Binario 'analyzer' compilado.
+#               - qemu-aarch64 (si se ejecuta en arquitectura no-ARM64).
+#               - Archivos de log en carpeta data/.
+###############################################################################
 
 set -euo pipefail
 
