@@ -1,7 +1,7 @@
 # 🚀 Mini Cloud Log Analyzer (ARM64)
 
 ## 👤 Autor
-- Nombre: *Pablo Hernández López*
+- Nombre: *Pablohzdev: Pablo Hernández López* - 23211987
 - Curso: Arquitectura de Computadoras / Ensamblador ARM64  
 - Fecha: 22 de Abril 2026  
 
@@ -165,11 +165,14 @@ Además, se evidenció la complejidad adicional que implica trabajar sin abstrac
 ## 📎 Evidencia
 
 Ejemplo de ejecución:
+
+```code
 $ ./run.sh
 === Mini Cloud Log Analyzer ===
 Éxitos 2xx: 4
 Errores 4xx: 3
 Errores 5xx: 3
+```
 
 ## 🧠 Reflexión personal
 
